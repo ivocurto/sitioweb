@@ -1,0 +1,13 @@
+.products {
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.title {
+    @include propiedades-flex (row,center,none);
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-family: $fuente-principal;
+}

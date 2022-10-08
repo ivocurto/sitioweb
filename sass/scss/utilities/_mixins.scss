@@ -1,0 +1,27 @@
+@mixin propiedades-flex($direction,$justify,$align){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin cuadricula-grid($columns,$rows){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+// @mixin casilla-grid($columnStart,$columnEnd,$rowStart,$rowEnd){
+//     display: grid;
+//     grid-column-start: $columnStart;
+//     grid-column-end: $columnEnd;
+//     grid-row-start: $rowStart;
+//     grid-row-end: $rowEnd;
+// }
+
+// usar con:
+
+// .clase{
+//     @include propiedades-flex (row, center, center)
+// }

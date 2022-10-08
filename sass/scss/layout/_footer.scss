@@ -1,0 +1,32 @@
+footer {
+    background-color: $background-negro;
+    font-family: $fuente-principal;
+    width: 100%;
+    bottom: 0;
+    @include propiedades-flex (row,center,none);
+    div {
+        padding: 0;
+        width: 30%;
+        ul {
+            @include propiedades-flex (row,space-evenly,none);
+            padding-top: 25px;
+            list-style: none;
+            flex-wrap: wrap;
+            padding-left: 0;
+            column-gap: 20px;
+        }
+        a {
+            @include propiedades-flex (row,center,none);
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            &:hover {
+                color: rgb(50, 50, 50);
+                transition: 0.6s;
+            }
+            img {
+                width: 3rem;
+                margin: 1rem 0rem;
+            }
+        }
+    }
+}
