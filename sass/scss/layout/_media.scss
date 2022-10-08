@@ -1,0 +1,151 @@
+@media screen and (max-width: 768px){
+
+    /* INDEX */
+
+    .desktop-m ul{
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        margin-left: 1rem;
+        filter: invert(1);
+        a {
+            img {
+                width: 3rem;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        filter: invert(1);
+        background-color: rgb(24, 24, 24);
+    }
+
+    .dropdown-menu li a{
+        padding: .7rem 0rem;
+    }
+
+    .imagen-index {
+        width: auto;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .first-text p {
+        text-align: center;
+    }
+
+    .contact {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .contact__right-side
+    {
+        width: 75%;
+        grid-column: 1/1;
+        grid-row: 2/3;
+        margin: 5rem 0;
+    }
+
+    .contact__left-side__lines div{
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .contact__left-side {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .second-text {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,2fr);
+    }
+
+    .second-text__text-container {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        margin: 2rem;
+    }
+
+    .second-text__img-container {
+        grid-column: 1/1;
+        grid-row: 1/2;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    /* INDEX */
+
+    .desktop-m ul{
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        margin-left: 1rem;
+        filter: invert(1);
+    }
+
+    .dropdown-menu {
+        filter: invert(1);
+        background-color: rgb(24, 24, 24);
+    }
+
+    .dropdown-menu li a{
+        padding: .7rem 0rem;
+    }
+
+    .imagen-index h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .see-more {
+        font-size: 16px;
+        transition: 0.6s;
+        justify-content: center;
+        margin: 0em 0 5.5em 0;
+        font-family: 'Montserrat';
+        text-align: center;
+    }
+
+    .imagen-index {
+        height: 70vh;
+    }
+
+    // NOSOTROS
+
+    .second-text {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(1, 1fr);
+        .second-text__img-container {
+            grid-column: 1;
+            grid-row: 2/4;
+        }
+        .second-text__text-container {
+            grid-column: 1;
+            grid-row: 5/7;
+        }
+    }
+
+}
+
