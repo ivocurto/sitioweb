@@ -23,12 +23,18 @@
         background-color: rgb(24, 24, 24);
     }
 
-    .dropdown-menu li a{
-        padding: .7rem 0rem;
+    .dropdown-menu li {
+        padding: .5rem 0rem .5rem 1rem;
+        border-bottom: rgb(10, 10, 10) 1px solid;
+        a {
+        text-decoration: none;
+        color: white;
+        }
     }
 
     .imagen-index {
         width: auto;
+        background-size: cover;
     }
 
     .title {

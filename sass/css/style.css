@@ -430,11 +430,17 @@ footer div a img {
     filter: invert(1);
     background-color: rgb(24, 24, 24);
   }
+  .dropdown-menu li {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    border-bottom: rgb(10, 10, 10) 1px solid;
+  }
   .dropdown-menu li a {
-    padding: 0.7rem 0rem;
+    text-decoration: none;
+    color: white;
   }
   .imagen-index {
     width: auto;
+    background-size: cover;
   }
   .title {
     text-align: center;
