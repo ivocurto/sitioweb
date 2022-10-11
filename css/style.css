@@ -67,7 +67,7 @@ header nav {
 }
 
 .imagen-index {
-  background-image: url(../../img/indexImage.jpg);
+  background-image: url(../img/indexImage.jpg);
   height: 100vh;
   background-position: center center;
   background-attachment: fixed;
