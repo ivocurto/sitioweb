@@ -1,104 +1,108 @@
 @media screen and (max-width: 768px){
 
-    /* INDEX */
-
-    .desktop-m ul{
-        display: none;
-    }
-
-    .burger-menu {
-        display: block;
-        position: absolute;
-        margin-left: 1rem;
-        filter: invert(1);
-        a {
-            img {
-                width: 3rem;
+// NAVBAR
+    nav {
+        .burger-menu {
+            display: block;
+            position: absolute;
+            margin-left: 1rem;
+            filter: invert(1);
+            a {
+                img {
+                    width: 3rem;
+                }
+            }
+            .dropdown-menu {
+                filter: invert(1);
+                background-color: rgb(24, 24, 24);
+                li {
+                    padding: .5rem 0rem .5rem 1rem;
+                    border-bottom: rgb(10, 10, 10) 1px solid;
+                    a {
+                    text-decoration: none;
+                    color: white;
+                    }
+                }
+            }
+        }
+        .desktop-m {
+            ul {
+                display: none;
             }
         }
     }
 
-    .dropdown-menu {
-        filter: invert(1);
-        background-color: rgb(24, 24, 24);
-    }
-
-    .dropdown-menu li {
-        padding: .5rem 0rem .5rem 1rem;
-        border-bottom: rgb(10, 10, 10) 1px solid;
-        a {
-        text-decoration: none;
-        color: white;
-        }
-    }
+    // INDEX
 
     .imagen-index {
         width: auto;
         background-size: cover;
     }
 
+    // OTROS
+
     .title {
         text-align: center;
     }
 
+    // NOSOTROS
+
     .first-text p {
         text-align: center;
     }
+    .second-text {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,2fr);
+        .second-text__img-container {
+            grid-column: 1/1;
+            grid-row: 1/2;
+            margin: 1rem;
+        }
+        .second-text__text-container {
+            grid-column: 1/1;
+            grid-row: 2/3;
+            margin: 2rem;
+        }
+    }
+
+    // CONTACTO
 
     .contact {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,1fr);
-    }
-
-    .contact__right-side
-    {
-        width: 75%;
-        grid-column: 1/1;
-        grid-row: 2/3;
-        margin: 5rem 0;
-    }
-
-    .contact__left-side__lines div{
-        display: flex;
-        padding: 1rem;
-        align-items: center;
-        font-family: "Montserrat";
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    
-    .contact__left-side {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-
-    .second-text {
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,2fr);
-    }
-
-    .second-text__text-container {
-        grid-column: 1/1;
-        grid-row: 2/3;
-        margin: 2rem;
-    }
-
-    .second-text__img-container {
-        grid-column: 1/1;
-        grid-row: 1/2;
-        margin: 1rem;
+        .contact__right-side {
+            width: 75%;
+            grid-column: 1/1;
+            grid-row: 2/3;
+            margin: 5rem 0;
+        }
+        .contact__left-side {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            div {
+                .contact__left-side__lines div{
+                    display: flex;
+                    padding: 1rem;
+                    align-items: center;
+                    font-family: "Montserrat";
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 576px){
 
-    /* INDEX */
+// NAVBAR
 
-    .desktop-m ul{
-        display: none;
+    .desktop-m {
+        ul {
+            display: none;
+        }
     }
 
     .burger-menu {
@@ -106,20 +110,28 @@
         position: absolute;
         margin-left: 1rem;
         filter: invert(1);
+        .dropdown-menu {
+            filter: invert(1);
+            background-color: rgb(24, 24, 24);
+            li {
+                a {
+                    padding: .7rem 0rem;
+                }
+            }
+        }
     }
 
-    .dropdown-menu {
-        filter: invert(1);
-        background-color: rgb(24, 24, 24);
+    // INDEX
+
+    .imagen-index {
+        background-image: url(../../img/indexImage2.jpg);
+        height: 70vh;
+        h1 {
+            font-size: 2rem;
+        }
     }
 
-    .dropdown-menu li a{
-        padding: .7rem 0rem;
-    }
-
-    .imagen-index h1 {
-        font-size: 2rem;
-    }
+    // OTROS
     
     .subtitle {
         font-size: 1.5rem;
@@ -132,10 +144,6 @@
         margin: 0em 0 5.5em 0;
         font-family: 'Montserrat';
         text-align: center;
-    }
-
-    .imagen-index {
-        height: 70vh;
     }
 
     // NOSOTROS
@@ -152,6 +160,5 @@
             grid-row: 5/7;
         }
     }
-
 }
 
