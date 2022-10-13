@@ -437,10 +437,6 @@ footer div a img {
   nav .desktop-m ul {
     display: none;
   }
-  .imagen-index {
-    width: auto;
-    background-size: cover;
-  }
   .title {
     text-align: center;
   }
