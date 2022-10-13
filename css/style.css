@@ -506,7 +506,7 @@ footer div a img {
     padding: 0.7rem 0rem;
   }
   .imagen-index {
-    background-image: url(../../img/indexImage2.jpg);
+    background-image: url(../img/indexImage2.jpg);
     height: 70vh;
   }
   .imagen-index h1 {
