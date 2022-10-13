@@ -1,9 +1,7 @@
 .imagen-index {
-    background-image: url(../img/indexImage.jpg);
-    height: 100vh;
-    background-position: center center;
+    background: url(../img/indexImage.jpg) no-repeat center center/cover;
     background-attachment: fixed;
-    background-size: cover;
+    height: 100vh;
     @include cuadricula-grid (repeat(6,1fr), repeat(3,1fr));
     justify-items: center;
     font-family: $fuente-principal;
