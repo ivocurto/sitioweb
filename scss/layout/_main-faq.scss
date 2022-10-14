@@ -1,15 +1,23 @@
-.faqContainer {
+.faqBox {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px;
-    gap: 50px;
-    .faqCard {
-        font-family: "Montserrat";
-        padding: 25px;
-        border: 2px solid black;
-        .questions {
-            font-weight: bold;
+    justify-content: center;
+    .faqContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        gap: 50px;
+        width: 33%;
+        .faqCard {
+            font-family: "Montserrat";
+            padding: 25px;
+            border: 2px solid black;
+            .questions {
+                font-weight: bold;
+            }
+            .answers {
+                flex-wrap: wrap;
+            }
         }
     }
 }

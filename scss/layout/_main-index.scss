@@ -81,12 +81,13 @@
 }
 
 .cardContent {
-    flex-direction: column;
+    flex-direction: column; 
     font-family: $fuente-principal;
     padding: 20px;
+    height: 100%;
     h3 {
         font-size: 1.3rem;
-        margin: 1px 0;
+        margin-bottom: 1rem;
     }
     a {
         display: flex;
@@ -98,6 +99,7 @@
         align-items: stretch;
         color: white;
         border-radius: 10px;
+        bottom: 0;
         &:hover {
             transition: .3s;
             color: rgba(70, 223, 121, 0.603);;

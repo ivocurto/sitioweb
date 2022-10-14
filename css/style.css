@@ -158,10 +158,11 @@ header nav {
   flex-direction: column;
   font-family: "Montserrat";
   padding: 20px;
+  height: 100%;
 }
 .cardContent h3 {
   font-size: 1.3rem;
-  margin: 1px 0;
+  margin-bottom: 1rem;
 }
 .cardContent a {
   display: flex;
@@ -173,6 +174,7 @@ header nav {
   align-items: stretch;
   color: white;
   border-radius: 10px;
+  bottom: 0;
 }
 .cardContent a:hover {
   transition: 0.3s;
@@ -216,20 +218,28 @@ header nav {
   font-family: "Montserrat";
 }
 
-.faqContainer {
+.faqBox {
+  display: flex;
+  justify-content: center;
+}
+.faqBox .faqContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
   gap: 50px;
+  width: 33%;
 }
-.faqContainer .faqCard {
+.faqBox .faqContainer .faqCard {
   font-family: "Montserrat";
   padding: 25px;
   border: 2px solid black;
 }
-.faqContainer .faqCard .questions {
+.faqBox .faqContainer .faqCard .questions {
   font-weight: bold;
+}
+.faqBox .faqContainer .faqCard .answers {
+  flex-wrap: wrap;
 }
 
 .first-text {
