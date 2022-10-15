@@ -67,7 +67,7 @@ header nav {
 }
 
 .imagen-index {
-  background: url(../img/indexImage.jpg) no-repeat center center/cover;
+  background: url(../img/patron-blanco.jpg) repeat-x center center/cover;
   background-attachment: fixed;
   height: 100vh;
   display: grid;
@@ -75,7 +75,7 @@ header nav {
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   font-family: "Montserrat";
-  color: white;
+  color: rgb(24, 24, 24);
   font-size: 2rem;
   text-shadow: black 2px 4px 10px;
 }
@@ -100,8 +100,8 @@ header nav {
   margin-top: 4rem;
 }
 .imagen-index div a {
-  color: rgb(255, 255, 255);
-  border: #fff 2px solid;
+  color: rgb(24, 24, 24);
+  border: rgb(24, 24, 24) 2px solid;
   padding: 10px 15px 15px 15px;
   border-radius: 25%;
   background-color: rgba(255, 255, 255, 0.068);
@@ -112,6 +112,7 @@ header nav {
   color: rgba(255, 255, 255, 0.205);
 }
 .imagen-index div a img {
+  filter: invert(1);
   width: 2rem;
 }
 
@@ -510,7 +511,7 @@ footer div a img {
     padding: 0.7rem 0rem;
   }
   .imagen-index {
-    background-image: url(../img/indexImage2.jpg);
+    background-image: url(../img/patron-blanco.jpg);
     height: 70vh;
   }
   .imagen-index h1 {

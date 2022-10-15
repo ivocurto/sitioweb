@@ -1,11 +1,11 @@
 .imagen-index {
-    background: url(../img/indexImage.jpg) no-repeat center center/cover;
+    background: url(../img/patron-blanco.jpg) repeat-x center center/cover;
     background-attachment: fixed;
     height: 100vh;
     @include cuadricula-grid (repeat(6,1fr), repeat(3,1fr));
     justify-items: center;
     font-family: $fuente-principal;
-    color: white;
+    color: $background-negro;
     font-size: 2rem;
     text-shadow: black 2px 4px 10px;
     h1 {
@@ -28,8 +28,8 @@
         grid-row: 3/4;
         margin-top: 4rem;
         a {
-            color: rgb(255, 255, 255);
-            border: #fff 2px solid;
+            color: $background-negro;
+            border: $background-negro 2px solid;
             padding: 10px 15px 15px 15px;
             border-radius: 25%;
             background-color: rgba(255, 255, 255, 0.068);
@@ -39,6 +39,7 @@
                 color: rgba(255, 255, 255, 0.205);
             }
             img {
+                filter: invert(1);
                 width: 2rem;
             }
         }
