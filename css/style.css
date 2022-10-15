@@ -626,7 +626,7 @@ footer div a img {
   }
   .imagen-index {
     background-image: url(../img/patron-blanco.jpg);
-    background-attachment: none;
+    background-attachment: local;
     height: 70vh;
   }
   .imagen-index h1 {
