@@ -24,6 +24,7 @@ header {
   height: 65px;
   display: flex;
   align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.575);
   z-index: 150;
 }
 header nav {
@@ -75,15 +76,15 @@ header nav {
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   font-family: "Montserrat";
-  color: rgb(24, 24, 24);
+  color: rgb(32, 32, 32);
   font-size: 2rem;
   text-shadow: black 2px 4px 10px;
 }
 .imagen-index h1 {
   display: grid;
   grid-column: 3/5;
-  grid-row: 1/2;
-  font-size: 4rem;
+  grid-row: 1/3;
+  font-size: 5rem;
   font-weight: bold;
   align-items: center;
 }
@@ -101,7 +102,7 @@ header nav {
 }
 .imagen-index div a {
   color: rgb(24, 24, 24);
-  border: rgb(24, 24, 24) 2px solid;
+  border: rgb(32, 32, 32) 2px solid;
   padding: 10px 15px 15px 15px;
   border-radius: 25%;
   background-color: rgba(255, 255, 255, 0.068);
@@ -112,7 +113,6 @@ header nav {
   color: rgba(255, 255, 255, 0.205);
 }
 .imagen-index div a img {
-  filter: invert(1);
   width: 2rem;
 }
 
@@ -133,39 +133,37 @@ header nav {
 }
 
 .box {
-  width: 80%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: none;
   flex-wrap: wrap;
   gap: 120px;
-  padding-top: 3em;
-  padding-bottom: 6em;
+  margin-top: 3em;
+  margin-bottom: 6em;
 }
-
-.card {
+.box .card {
   width: 18rem;
   border-radius: 15px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
 }
-.card .productImg img {
+.box .card .productImg img {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
-.cardContent {
+.box .card .cardContent {
   flex-direction: column;
   font-family: "Montserrat";
   padding: 20px;
   height: 100%;
 }
-.cardContent h3 {
+.box .card .cardContent h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-.cardContent a {
+.box .card .cardContent a {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -177,7 +175,7 @@ header nav {
   border-radius: 10px;
   bottom: 0;
 }
-.cardContent a:hover {
+.box .card .cardContent a:hover {
   transition: 0.3s;
   color: rgba(70, 223, 121, 0.603);
 }
@@ -214,7 +212,7 @@ header nav {
   flex-direction: row;
   justify-content: center;
   align-items: none;
-  padding-top: 50px;
+  margin-top: 50px;
   font-size: 2.5rem;
   font-family: "Montserrat";
 }
@@ -229,12 +227,12 @@ header nav {
   align-items: center;
   margin: 50px;
   gap: 50px;
-  width: 33%;
+  width: 39%;
 }
 .faqBox .faqContainer .faqCard {
   font-family: "Montserrat";
   padding: 25px;
-  border: 2px solid black;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.13);
 }
 .faqBox .faqContainer .faqCard .questions {
   font-weight: bold;
@@ -249,7 +247,7 @@ header nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 1rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 3rem 0rem 3rem;
   margin-bottom: 6rem;
 }
 
@@ -268,8 +266,7 @@ header nav {
 }
 .second-text .second-text__img-container img {
   width: 16rem;
-  padding: 25px;
-  border: black 2px solid;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
 }
 .second-text .second-text__text-container {
   text-align: center;
@@ -282,19 +279,22 @@ header nav {
 .contact {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 2rem 0;
+  padding: 2rem 8rem;
   justify-items: center;
 }
 
 .contact__left-side {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   grid-column: 1/3;
   text-align: center;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
 }
 .contact__left-side h2 {
+  width: 100%;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -324,23 +324,25 @@ header nav {
 }
 
 .contact__right-side {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: center;
   grid-column: 4/6;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
 }
 .contact__right-side section {
   width: 100%;
 }
 .contact__right-side section h2 {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Montserrat";
   padding-bottom: 1em;
 }
 .contact__right-side section form {
-  padding-top: 3rem;
+  padding: 3rem 2rem 2rem 2rem;
   font-family: "Montserrat";
   display: flex;
   flex-direction: column;
@@ -423,6 +425,38 @@ footer div a img {
   margin: 1rem 0rem;
 }
 
+@media screen and (max-width: 1279px) {
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contact .contact__right-side {
+    width: 75%;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    margin: 5rem 0;
+    padding: 2rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+  }
+  .contact .contact__left-side {
+    margin: 5rem 0;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+  }
+  .contact .contact__left-side div .contact__left-side__lines div {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  footer div {
+    width: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   nav .burger-menu {
     display: block;
@@ -431,7 +465,7 @@ footer div a img {
     filter: invert(1);
   }
   nav .burger-menu a img {
-    width: 3rem;
+    width: 2.5rem;
   }
   nav .burger-menu .dropdown-menu {
     filter: invert(1);
@@ -448,8 +482,77 @@ footer div a img {
   nav .desktop-m ul {
     display: none;
   }
+  .box {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .box .card {
+    width: 16rem;
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+  }
+  .box .card .productImg img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .box .card .cardContent {
+    flex-direction: column;
+    font-family: "Montserrat";
+    padding: 10px;
+    height: 100%;
+  }
+  .box .card .cardContent h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  .box .card .cardContent a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(0, 184, 61);
+    margin-top: 1px;
+    padding: 10px 25px;
+    align-items: stretch;
+    color: white;
+    border-radius: 10px;
+    bottom: 0;
+  }
+  .box .card .cardContent a:hover {
+    transition: 0.3s;
+    color: rgba(70, 223, 121, 0.603);
+  }
+  .box .card .cardContent p {
+    font-size: 0.8rem;
+  }
   .title {
     text-align: center;
+  }
+  .faqBox {
+    display: flex;
+    justify-content: center;
+  }
+  .faqBox .faqContainer {
+    margin: 50px;
+    gap: 50px;
+    width: 75%;
+  }
+  .faqBox .faqContainer .faqCard {
+    padding: 25px;
+  }
+  .faqBox .faqContainer .faqCard .questions {
+    font-weight: bold;
+  }
+  .faqBox .faqContainer .faqCard .answers {
+    flex-wrap: wrap;
   }
   .first-text p {
     text-align: center;
@@ -469,6 +572,7 @@ footer div a img {
     margin: 2rem;
   }
   .contact {
+    padding: 2rem 2rem;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -477,12 +581,16 @@ footer div a img {
     grid-column: 1/1;
     grid-row: 2/3;
     margin: 5rem 0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+    padding: 2;
   }
   .contact .contact__left-side {
     width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 2rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
   }
   .contact .contact__left-side div .contact__left-side__lines div {
     display: flex;
@@ -517,20 +625,51 @@ footer div a img {
   .imagen-index h1 {
     font-size: 3rem;
   }
+  .title {
+    font-size: 2rem;
+  }
   .subtitle {
     font-size: 1.5rem;
   }
-  .see-more {
+  .seeMore {
     font-size: 16px;
     transition: 0.6s;
     justify-content: center;
     margin: 0em 0 5.5em 0;
     font-family: "Montserrat";
     text-align: center;
+    margin-bottom: 3rem;
+  }
+  .seeMore a {
+    padding: 20px 25px;
+  }
+  .faqBox {
+    display: flex;
+    justify-content: center;
+  }
+  .faqBox .faqContainer {
+    margin: 25px;
+    gap: 25px;
+    width: 75%;
+  }
+  .faqBox .faqContainer .faqCard {
+    padding: 1rem;
+  }
+  .faqBox .faqContainer .faqCard .questions {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .faqBox .faqContainer .faqCard .answers {
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  .first-text {
+    margin-bottom: 3rem;
   }
   .second-text {
     grid-template-columns: repeat(1, 2fr);
     grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 3rem;
   }
   .second-text .second-text__img-container {
     grid-column: 1;
@@ -539,6 +678,68 @@ footer div a img {
   .second-text .second-text__text-container {
     grid-column: 1;
     grid-row: 5/7;
+  }
+  .contact {
+    padding: 0.5rem 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contact .contact__right-side {
+    width: 75%;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+    padding: 0.5rem 1rem;
+  }
+  .contact .contact__right-side h2 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .contact .contact__right-side form {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .contact .contact__right-side form .form__container {
+    gap: 1.5em;
+  }
+  .contact .contact__right-side form .form__container .form__group input {
+    padding: 0.2rem;
+  }
+  .contact .contact__right-side form .form__container .form__group label {
+    font-size: 0.8rem;
+  }
+  .contact .contact__left-side {
+    width: 75%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .contact .contact__left-side h2 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .contact .contact__left-side .contact__left-side__content .contact__left-side__lines div {
+    margin: 1rem 0;
+    display: flex;
+    padding: 0rem;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .contact .contact__left-side .contact__left-side__content .contact__left-side__lines div img {
+    width: auto;
+    padding-right: 0.5rem;
+  }
+  .contact .contact__left-side .contact__left-side__content .contact__left-side__lines div p {
+    font-size: 0.8rem;
   }
 }
 

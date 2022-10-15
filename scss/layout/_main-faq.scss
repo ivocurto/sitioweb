@@ -7,11 +7,11 @@
         align-items: center;
         margin: 50px;
         gap: 50px;
-        width: 33%;
+        width: 39%;
         .faqCard {
             font-family: "Montserrat";
             padding: 25px;
-            border: 2px solid black;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.13);
             .questions {
                 font-weight: bold;
             }

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 1rem 0.5rem 0rem 0.5rem ;
+    padding: 1rem 3rem 0rem 3rem ;
     margin-bottom: 6rem;
 }
 
@@ -21,8 +21,7 @@
         grid-row: 1;
         img {
             width: 16rem;
-            padding: 25px;
-            border: black 2px solid;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
         }
     }
     .second-text__text-container {
