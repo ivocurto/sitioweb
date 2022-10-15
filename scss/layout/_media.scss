@@ -8,7 +8,7 @@
             grid-row: 2/3;
             margin: 5rem 0;
             padding: 2rem;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+            box-shadow: $sombra-gris;
         }
         .contact__left-side {
             margin: 5rem 0;
@@ -16,7 +16,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+            box-shadow: $sombra-gris;
             div {
                 .contact__left-side__lines div{
                     display: flex;
@@ -82,7 +82,7 @@
         .card {
             width: 16rem;
             border-radius: 15px;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+            box-shadow: $sombra-gris;
             .productImg{
                 img {
                     width: 100%;
@@ -181,8 +181,10 @@
             grid-column: 1/1;
             grid-row: 2/3;
             margin: 5rem 0;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
-            padding: 2;
+            box-shadow: $sombra-gris;
+            h2 {
+                margin: 1rem 0;
+            }
         }
         .contact__left-side {
             width: 75%;
@@ -190,7 +192,10 @@
             flex-direction: column;
             justify-content: space-evenly;
             padding: 2rem;
-            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+            box-shadow: $sombra-gris;
+            h2 {
+                margin: 1rem 0;
+            }
             div {
                 .contact__left-side__lines div{
                     display: flex;
@@ -199,6 +204,9 @@
                     font-family: "Montserrat";
                     font-size: 1.2rem;
                     font-weight: bold;
+                    p {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -235,6 +243,7 @@
 
     .imagen-index {
         background-image: url(../img/patron-blanco.jpg);
+        background-attachment: none;
         height: 70vh;
         h1 {
             font-size: 3rem;
@@ -318,10 +327,10 @@
                 grid-row: 2/3;
                 margin-top: 0;
                 margin-bottom: 4rem;
-                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+                box-shadow: $sombra-gris;
                 padding: .5rem 1rem;
                 h2 {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     padding: 0;
                 }
                 form {
@@ -347,11 +356,11 @@
                 flex-direction: column;
                 justify-content: space-around;
                 padding: 0.5rem;
-                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.329);
+                box-shadow: $sombra-gris;
                 margin-top: 2rem;
                 margin-bottom: 0;
                 h2 {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     padding: 0;
                 }
                 .contact__left-side__content {
