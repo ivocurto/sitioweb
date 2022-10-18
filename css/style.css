@@ -76,7 +76,7 @@ header nav {
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   font-family: "Montserrat";
-  color: rgb(32, 32, 32);
+  color: white;
   font-size: 2rem;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.178);
 }
@@ -87,6 +87,7 @@ header nav {
   font-size: 5rem;
   font-weight: bold;
   align-items: center;
+  text-shadow: 8px 8px 10px rgb(0, 0, 0);
 }
 .imagen-index .subtitle {
   display: grid;
@@ -102,11 +103,11 @@ header nav {
 }
 .imagen-index div a {
   color: rgb(24, 24, 24);
-  border: rgb(32, 32, 32) 2px solid;
+  border: rgb(255, 255, 255) 2px solid;
   padding: 10px 15px 15px 15px;
   border-radius: 25%;
   background-color: rgba(255, 255, 255, 0.068);
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.178);
+  box-shadow: 8px 8px 10px rgb(0, 0, 0);
 }
 .imagen-index div a:hover {
   transition: 0.6s;

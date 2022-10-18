@@ -5,9 +5,9 @@
     @include cuadricula-grid (repeat(6,1fr), repeat(3,1fr));
     justify-items: center;
     font-family: $fuente-principal;
-    color: rgb(32, 32, 32);
+    color: white;
     font-size: 2rem;
-    text-shadow:  $sombra-gris;
+    text-shadow: $sombra-gris;
     h1 {
         display: grid;
         grid-column: 3/5;
@@ -15,6 +15,7 @@
         font-size: 5rem;
         font-weight: bold;
         align-items: center;
+        text-shadow: 8px 8px 10px rgb(0, 0, 0);
     }
     .subtitle {
         display: grid;
@@ -29,11 +30,11 @@
         margin-top: 4rem;
         a {
             color: $background-negro;
-            border:  rgb(32, 32, 32) 2px solid;
+            border:  rgb(255, 255, 255) 2px solid;
             padding: 10px 15px 15px 15px;
             border-radius: 25%;
             background-color: rgba(255, 255, 255, 0.068);
-            box-shadow:  $sombra-gris;
+            box-shadow: 8px 8px 10px rgb(0, 0, 0);
             &:hover {
                 transition: 0.6s;
                 color: rgba(255, 255, 255, 0.205);
